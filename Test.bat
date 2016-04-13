@@ -1,0 +1,1 @@
+forfiles /p \\psf\Home\Desktop\Eclipse\Database /m *.xlsx /c "cmd /c java -jar DataBaseTest.jar @file"
