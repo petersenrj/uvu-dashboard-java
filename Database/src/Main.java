@@ -45,8 +45,8 @@ public class Main {
 		try {
 			
 			Class.forName("org.sqlite.JDBC");
-			conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\The Beast\\Desktop\\2ndStoryCapitalMasterFolder\\2ndStoryCapitalMaster.sqlite");
-			//conn = DriverManager.getConnection("jdbc:sqlite:/Users/petersenrr/Desktop/2ndStoryCapitalMasterFolder/2ndStoryCapitalMaster.sqlite");
+			conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\daveh\\Documents\\Dashboard\\remoteData.db");
+			//conn = DriverManager.getConnection("jdbc:sqlite:/Users/petersenrr/Desktop/installation/2ndStoryCapitalMasterFolder1/remoteData.db");
 			if(conn != null)
 			{
 				errorCode = -1;

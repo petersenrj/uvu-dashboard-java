@@ -12,7 +12,7 @@ public class Main {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-		//conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\The Beast\\Desktop\\2ndStoryCapitalMasterFolder\\2ndStoryCapitalMaster.sqlite");
+		//conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\daveh\\Documents\\Dashboard\\remoteData.db");
 		conn = DriverManager.getConnection("jdbc:sqlite:/Users/petersenrr/Desktop/2ndStoryCapitalMasterFolder/2ndStoryCapitalMaster.sqlite");
 		if(conn != null)
 		{

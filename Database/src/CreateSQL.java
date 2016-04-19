@@ -22,14 +22,15 @@ public class CreateSQL
 			if(type == 0)
 			{
 				sql = "INSERT INTO RealEstate (invName,capRate,netOp,debtCov,opExp,cashRet) " +
-		                "VALUES ('" + temp.getName() + "'," + " '" + temp.getCapRate() + "', " + temp.getNetOperating() + ",  " + temp.getDebtCoverage()
+		                "VALUES ('" + temp.getName() + "'," + " '" + temp.getCapRate() + "', " 
+						+ temp.getNetOperating() + ",  " + temp.getDebtCoverage()
 		                + ",  " + temp.getOperatingExpense() + ", " + temp.getCashOnCash() + " );"; 
 				Statement stmt = null;
 				try {
 					stmt = conn.createStatement();
 					stmt.executeUpdate(sql);
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
+					
 					e.printStackTrace();
 				}
 			}
@@ -38,13 +39,13 @@ public class CreateSQL
 		if(type == 1)
 		{
 			sql = "INSERT OR REPLACE INTO AppInfo (ID, errorCode, username, password) " +
-	                "VALUES (" + this.index1++ +", " + errorCode + ", null, null );"; 
+	                "VALUES (" + this.index1++ +", " + errorCode + ", 'SecondStoryCapital', 'redbrick' );"; 
 			Statement stmt = null;
 			try {
 				stmt = conn.createStatement();
 				stmt.executeUpdate(sql);
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 		}
